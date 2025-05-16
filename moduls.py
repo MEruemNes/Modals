@@ -18,5 +18,10 @@ linkler = {
 
 if st.button("Devam Et"):
     secilen_link = linkler.get(modul)
-    st.success("Yönlendiriliyorsunuz:")
-    st.markdown(f"[👉 Buraya tıklayın]({secilen_link})", unsafe_allow_html=True)
+    
+    # Otomatik yönlendirme yapan JavaScript
+    js = f"""
+    <meta http-equiv="refresh" content="0; url={secilen_link}">
+    <p>Yönlendiriliyorsunuz... Eğer yönlendirilmezseniz <a href="{secilen_link}">buraya tıklayın</a>.</p>
+    """
+    st.markdown(js, unsafe_allow_html=True)
