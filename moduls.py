@@ -10,10 +10,10 @@ modul = st.radio(
 )
 
 linkler = {
-    "1 - A1": "https://example.com/A1",
-    "2 - A2": "https://example.com/A2",
+    "1 - A1": "https://calculator-jctqjn5zjrrasjtf2jw5wi.streamlit.app/",
+    "2 - A2": "https://calculator-jctqjn5zjrrasjtf2jw5wi.streamlit.app/",
     "3 - B1": "https://calculator-jctqjn5zjrrasjtf2jw5wi.streamlit.app/",
-    "4 - B2": "https://example.com/B2"
+    "4 - B2": "https://calculator-jctqjn5zjrrasjtf2jw5wi.streamlit.app/"
 }
 
 if st.button("Devam Et"):
